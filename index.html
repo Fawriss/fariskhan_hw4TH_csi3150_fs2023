@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Used Car Depot</div>
+    </nav>
+    <div class="wrapper">
+      <div id="search container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Black')">
+          Black
+        </button>
+        <button class="button-value" onclick="filterProduct('White')">
+          White
+        </button>
+        <button class="button-value" onclick="filterProduct('Silver')">
+          Silver
+        </button>
+        <button class="button-value" onclick="filterProduct('Blue')">
+          Blue
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <script src="usedCars.js"></script>
+  </body>
+</html>
